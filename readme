@@ -1,0 +1,50 @@
+# OpenSearch Docker Setup
+
+Welcome to the OpenSearch Docker Setup repository. This repository contains Docker Compose files to run OpenSearch along with OpenSearch Dashboards, enabling easy search, visualization, and management of your data.
+
+## Prerequisites
+
+Before you can run this project, you will need:
+
+- Docker: Install Docker from [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+- Docker Compose: Install Docker Compose from [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+
+## Installation
+
+Clone this repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/your-username/opensearch-docker-setup.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd opensearch-docker-setup
+```
+
+## Running OpenSearch
+
+To start OpenSearch and OpenSearch Dashboards, execute:
+
+```bash
+docker-compose up -d
+```
+
+This command will launch all services defined in the `docker-compose.yml` file in detached mode.
+
+## Accessing OpenSearch Dashboards
+
+Once the services are running, OpenSearch Dashboards can be accessed at:
+
+[http://localhost:5601/app/home#/](http://localhost:5601/app/home#/)
+
+Here you can create and manage your visualizations, dashboards, and explore your data.
+
+## Stopping OpenSearch
+
+To stop and remove the containers, use:
+
+```bash
+docker-compose down
+```
